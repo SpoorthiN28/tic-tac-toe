@@ -346,7 +346,7 @@ ol {
   }
 
   #players button {
-    padding-left: 2rem;
+    padding-left: 1rem;
   }
 
   .player {
@@ -357,25 +357,24 @@ ol {
     font-size: 0.75rem;
     width: 5rem;
     align-items: center;
-    padding-left: 1rem;
-    margin-left: 0.5rem;
+    margin-left: 0.9rem;
+    margin-top: 0.5rem;
   }
 
   .player-name {
     font-size: 16px;
     width: 100%;
-    margin: -0.5rem;
+    margin-left: -0.5rem;
   }
 
   .player-symbol {
     font-size: 16px;
-    margin-left: 1rem;
+    margin-left: 1.75rem;
   }
 
   #game-board button {
     width: 4rem;
     height: 4rem;
     font-size: 2rem;
-    margin: 0;
   }
 }
