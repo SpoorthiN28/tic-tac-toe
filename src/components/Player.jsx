@@ -10,6 +10,7 @@ export default function Player({
   const [isEditing, setIsEditing] = useState(false);
   const [p1hasClearedNameOnce, setP1hasClearedNameOnce] = useState(false);
   const [p2hasClearedNameOnce, setP2hasClearedNameOnce] = useState(false);
+  const [playerClearedNameOnce, setPlayerClearedNameOnce] = useState(false);
 
   function handleEditClick() {
     setIsEditing((editing) => !editing);
