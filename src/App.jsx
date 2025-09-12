@@ -120,7 +120,7 @@ function App() {
         )}
         <GameBoard onSelectSquare={handleSelectSquare} board={gameBoard} />
       </div>
-      
+
     </main>
   );
 }

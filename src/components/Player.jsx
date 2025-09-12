@@ -8,6 +8,7 @@ export default function Player({
 }) {
   const [playerName, setPlayerName] = useState(initialName);
   const [isEditing, setIsEditing] = useState(false);
+  const [playerClearedNameOnce, setPlayerClearedNameOnce] = useState(false);
 
   function handleEditClick() {
     setIsEditing((editing) => !editing);
@@ -16,8 +17,9 @@ export default function Player({
       onChangeName(symbol, playerName);
     }
 
-    if (playerName === initialName) {
-      setPlayerName("");
+    if (playerName === initialName && !playerClearedNameOnce) {
+      setPlayerClearedNameOnce(true);
+      setPlayerName('');
     }
   }
 
