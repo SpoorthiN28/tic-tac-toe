@@ -42,7 +42,6 @@
 
 @media (max-width: 600px) {
   .playerName {
-    text-align: center;
     font-size: 12px;
     margin-left: -3rem;
   }
