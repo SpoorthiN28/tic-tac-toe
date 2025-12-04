@@ -42,24 +42,29 @@
 
 @media (max-width: 600px) {
   .playerName {
-    font-size: 12px;
-    margin-left: -3rem;
+    font-size: 10px;
+    margin-left: -2.5rem;
   }
 
   .playerSymbol {
-    font-size: 12px;
+    font-size: 10px;
     margin-left: 1rem;
   }
 
   .player input {
-    font-size: 14px;
-    width: 8rem;
+    font-size: 10px;
+    width: 5rem;
     margin-top: 0.5rem;
     margin-right: 1rem;
+    padding: 0.25rem;
   }
 
   .submitButton {
-    margin-left: 2rem;
-    font-size: 12px;
+    margin-left: 1rem;
+    font-size: 8px;
+  }
+
+  .activePlayer {
+    width: 45%;
   }
 }
