@@ -1,6 +1,8 @@
+import classes from './GameOver.module.css';
+
 export default function GameOver({ winner, onRestart }) {
   return (
-    <div id="game-over">
+    <div className={classes.gameOver}>
       <h2>Game Over!</h2>
       {winner && <p>{winner} won!</p>}
       {!winner && <p>It&apos;s a draw!</p>}

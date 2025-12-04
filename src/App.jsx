@@ -1,9 +1,9 @@
 import { useState } from 'react';
 
-import Player from './components/Player.jsx';
-import GameBoard from './components/GameBoard.jsx';
+import Player from './components/Player/Player.jsx';
+import GameBoard from './components/GameBoard/GameBoard.jsx';
 
-import GameOver from './components/GameOver.jsx';
+import GameOver from './components/GameOver/GameOver.jsx';
 import { WINNING_COMBINATIONS } from './winning-combinations.js';
 
 const PLAYERS = {
@@ -100,7 +100,7 @@ function App() {
 
   return (
     <main>
-      <div id="game-container">
+      <div className='gameContainer'>
         <ol id="players" className="highlight-player">
           <Player
             initialName={PLAYERS.X}

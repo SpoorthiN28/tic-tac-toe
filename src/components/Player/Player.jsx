@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+import classes from './Player.module.css';
+
 export default function Player({
   initialName,
   symbol,
@@ -27,11 +29,15 @@ export default function Player({
     }
   }
 
+  function handleSubmit(event) {
+    event.preventDefault();
+  }
+
   function handleChange(event) {
     setPlayerName(event.target.value);
   }
 
-  let editablePlayerName = <span className="player-name">{playerName}</span>;
+  let editablePlayerName = <span className={classes.playerName}>{playerName}</span>;
 
   if (isEditing) {
     editablePlayerName = (
@@ -40,12 +46,18 @@ export default function Player({
   }
 
   return (
-    <li className={isActive ? 'active' : undefined}>
-      <span className="player">
-        {editablePlayerName}
-        <span className="player-symbol">{symbol}</span>
-      </span>
-      <button onClick={handleEditClick}>{isEditing ? 'Save' : 'Edit'}</button>
-    </li>
+    <form noValidate onSubmit={handleSubmit} className={classes.activePlayer}>
+      <div className={classes.playerDetails}>
+        <li className={isActive ? 'active' : undefined}>
+          <span className={classes.player}>
+            {editablePlayerName}
+            <span className={classes.playerSymbol}>{symbol}</span>
+          </span>
+          <button type='submit' onClick={handleEditClick} className={classes.submitButton}>
+            {isEditing ? 'Save' : 'Edit'}
+          </button>
+        </li>
+      </div>
+    </form>
   );
 }
