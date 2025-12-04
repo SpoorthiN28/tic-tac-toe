@@ -42,13 +42,14 @@
 
 @media (max-width: 600px) {
   .playerName {
-    font-size: 14px;
-    margin-left: -1.5rem;
+    text-align: center;
+    font-size: 12px;
+    margin-left: -3rem;
   }
 
   .playerSymbol {
-    font-size: 14px;
-    margin-left: 2rem;
+    font-size: 12px;
+    margin-left: 1rem;
   }
 
   .player input {
@@ -59,7 +60,7 @@
   }
 
   .submitButton {
-    margin-left: 4rem;
+    margin-left: 2rem;
     font-size: 12px;
   }
 }

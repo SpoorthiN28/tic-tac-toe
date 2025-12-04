@@ -31,8 +31,8 @@
 
 @media (max-width: 600px) {
   .gameBoard button {
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     font-size: 2rem;
   }
 }
